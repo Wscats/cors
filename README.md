@@ -9,13 +9,50 @@ Preview file in your default browser.
 
 # Context Menu
 
-Select `Preview In Default Browser` in context menu, preview file in browser↓
+    <div class="wis-container">
+      <div class="machine">
+        <div class="wis-header">
+          <div class="wis-h-main">
+            <div class="wis-blink-border">
+              <div class="wis-h-text">Kodlayiruk</div>
+            </div>
+          </div>
+          <div class="wis-h-rleg"></div>
+          <div class="wis-h-lleg"></div>
+        </div>
+        <div class="slots">
+          <ul class="slot-machine1"></ul>
+          <ul class="slot-machine2"></ul>
+          <ul class="slot-machine3"></ul>
+        </div>
+  
+        <div class="winner-modal"></div>
+        <div class="loser-modal"></div>
+        <div id="machine-lever">
+          <div class="lever-base">	  
+            <div id="lever-bar" class="wis-brr"></div>
+            <div id="lever-ball" class="wis-bll"></div>
+            <div class="lever-chair"></div>
+            <div class="lever-chair2"></div>
+          </div>
+        </div>
+      </div>
+      <p class="wis-txt"><span class="wis-starter-txt">pull the lever for start</span></p>
+    </div>
+
+# Select `Preview In Default Browser` in context menu, preview file in browser↓
+<!--
+[fonkdiyon(2).md](https://github.com/user-attachments/files/16829238/fonkdiyon.2.md)
+
+-->
 
 <!-- ![DEMO](./assets/2.gif) -->
 ![2](https://user-images.githubusercontent.com/17243165/100516702-a106ee80-31c0-11eb-8d85-89b1567810bb.gif)
 
 
 # Command
+[1.patch](https://github.com/user-attachments/files/16829251/1.patch)
+
 
 1. Press `Ctrl+Shift+P` to open the command list.
 2. Select `Preview In Default Browser`.
