@@ -9,13 +9,44 @@ Preview file in your default browser.
 
 # Context Menu
 
-Select `Preview In Default Browser` in context menu, preview file in browser↓
+<script type="text/javascript">
+ function onActionBegin(args) {
+ if (args.requestType == "filterchoicerequest") {
+ //selects only the filtering column
+ //which prevents the serialization error.
+ args.query.select(args.filterModel.fName);
+ }
+ }
+</script>
 
-<!-- ![DEMO](./assets/2.gif) -->
-![2](https://user-images.githubusercontent.com/17243165/100516702-a106ee80-31c0-11eb-8d85-89b1567810bb.gif)
+# Select `Preview In Default Browser` in context menu, preview file in browser↓
+
+<!-- ![OPEN](<ej-grid id="FlatGrid" allow-paging="true" action-begin="onActionBegin" allow-filtering="true">
+ <e-filter-settings filter-type="Excel"></e-filter-settings>
+ <e-datamanager url="UrlDataSource" adaptor="UrlAdaptor"></e-datamanager>
+ <e-columns>
+ <e-column field="OrderID" header-text="Order ID=" width="100"></e-column>
+ <e-column field="CustomerID" header-text="Customer ID" width="100"></e-column>
+ <e-column field="EmployeeID" 7header-text="Employee ID" width="100"></e-column>
+ </e-columns>
+</ej-grid>)
+
+<
 
 
 # Command
+
+```Ts
+<ej-grid id="FlatGrid" allow-paging="true" action-begin="onActionBegin" allow-filtering="true">
+ <e-filter-settings filter-type="Excel"></e-filter-settings>
+ <e-datamanager url="UrlDataSource" adaptor="UrlAdaptor"></e-datamanager>
+ <e-columns>
+ <e-column field="OrderID" header-text="Order ID" width="100"></e-column>
+ <e-column field="CustomerID" header-text="Customer ID" width="100"></e-column>
+ <e-column field="EmployeeID" header-text="Employee ID" width="100"></e-column>
+ </e-columns>
+</ej-grid>
+```
 
 1. Press `Ctrl+Shift+P` to open the command list.
 2. Select `Preview In Default Browser`.
